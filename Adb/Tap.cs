@@ -76,7 +76,7 @@ namespace JumperHelper.Adb
         {
             if (!this.CanDo) return false;
 
-            var startInfo = new ProcessStartInfo("adb", string.Format("shell input swipe {0} {1} {0} {1} {2}", this.P1.X, this.P2.X, this.Time));
+            var startInfo = new ProcessStartInfo("adb", string.Format("shell input swipe {0} {1} {0} {1} {2}", this.P1.X, this.P1.Y, this.Time));
             startInfo.CreateNoWindow = true;
             startInfo.ErrorDialog = true;
             startInfo.UseShellExecute = false;
